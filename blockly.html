@@ -1,0 +1,25 @@
+<html>
+
+<head>
+<script>
+var first, sec, oprt, ans;
+
+
+first = Number(window.prompt('first number'));
+sec = Number(window.prompt('second number'));
+oprt = window.prompt('opertaor?');
+if (oprt == '+') {
+  ans = first + sec;
+} else if (oprt == '-') {
+  ans = first - sec;
+} else if (oprt == '*') {
+  ans = first * sec;
+} else if (oprt == '/') {
+  ans = first / sec;
+} else {
+  window.alert('invalid data');
+}
+window.alert([first,oprt,sec,'=',ans].join(''));
+</script></head>
+<body></body>
+</html>
